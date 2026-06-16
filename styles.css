@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
-/* ========== RESET & BASE ========== */
+/* RESET & BASE */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -31,7 +31,7 @@ body {
     min-height: 100vh;
 }
 
-/* ========== NAVBAR ========== */
+/*  NAVBAR */
 .navbar {
     width: 100%;
     max-width: var(--navbar-max);
@@ -102,7 +102,6 @@ body {
     opacity: 0.85;
 }
 
-/* Hamburger icon — 3 lines */
 .menu-icon {
     display: none;
     flex-direction: column;
@@ -119,7 +118,7 @@ body {
     border-radius: 2px;
 }
 
-/* ========== HERO ========== */
+/* HERO */
 .hero {
     width: 100%;
     display: flex;
@@ -164,7 +163,7 @@ h1 {
     max-width: 720px;
 }
 
-/* Gradient text — "using AI" */
+/* Gradient text */
 .gradient-text {
     background: var(--gradient-ai);
     -webkit-background-clip: text;
@@ -192,7 +191,6 @@ h1 {
     transform: translateY(-1px);
 }
 
-/* Trial info */
 .trial-info {
     color: var(--color-muted);
     font-size: clamp(12px, 1.5vw, 14px);
@@ -208,12 +206,11 @@ h1 {
     color: var(--color-border);
 }
 
-/* ========== DASHBOARD ========== */
+/*DASHBOARD */
 .dashboard-wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
-    /* Glow effect beneath the card */
     position: relative;
 }
 
@@ -249,7 +246,7 @@ h1 {
     display: block;
 }
 
-/* ========== RESPONSIVE ========== */
+/*RESPONSIVE*/
 
 /* Tablet */
 @media (max-width: 768px) {
@@ -263,18 +260,18 @@ h1 {
         display: flex;
     }
 
-    /* On mobile: logo left, hamburger right */
+    
     .navbar {
         grid-template-columns: 1fr auto;
         padding: 20px var(--section-px);
     }
 
-    /* Hide the empty center column area */
+    
     .nav-links {
         display: none;
     }
 
-    /* nav-right only shows menu-icon */
+   
     .nav-right {
         justify-self: end;
     }
