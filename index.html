@@ -8,33 +8,43 @@
 </head>
 <body>
     <header class="navbar">
-        <div class="logo">CIRCLE</div>
-        <nav class="nav-links">
-            <a href="#">Features</a>
-            <a href="#">Pricing</a>
-            <a href="#">About Us</a>
+        <div class="navbar__logo">CIRCLE</div>
+        
+        <nav class="navbar__nav-links">
+            <a href="#" class="nav-links__item">Features</a>
+            <a href="#" class="nav-links__item">Pricing</a>
+            <a href="#" class="nav-links__item">About Us</a>
         </nav>
-        <div class="nav-right">
-            <a href="#" class="login">Customer Login</a>
-            <button class="signup">Sign Up</button>
-            <div class="menu-icon">☰</div>
+        
+        <div class="navbar__right">
+            <a href="#" class="navbar__login">Customer Login</a>
+            <button class="navbar__signup">Sign Up</button>
+            <div class="navbar__menu-icon">☰</div>
         </div>
     </header>
 
     <main class="hero">
-        <p class="eyebrow">An AI tool made for conversion rate optimization</p>
-        <h1>Increase your <br> conversion rate <span class="gradient-text">using AI</span></h1>
-        <button class="cta-main">Create account</button>
-        <p class="trial-info">
+        <p class="hero__eyebrow">An AI tool made for conversion rate optimization</p>
+        
+        <h1 class="hero__headline">
+            Increase your conversion rate <span class="gradient-text">using AI</span>
+        </h1>
+        
+        <button class="hero__cta">Create account</button>
+        
+        <p class="hero__trial-info">
             30 Days free trial <span>|</span> No credit card required
         </p>
         
-        <div class="dashboard-container">
-            <img src="Dashboard.jpeg" alt="Dashboard Preview">
+        <div class="hero__dashboard-wrapper">
+            <div class="hero__dashboard">
+                <img src="Dashboard.jpeg" alt="Dashboard Preview" class="hero__dashboard-image">
+            </div>
         </div>
     </main>
-    <footer>
-        <p>Valeria Espino Rubio - 23030024</p>
+
+    <footer class="footer">
+        <p class="footer__credit">Valeria Espino Rubio - 23030024</p>
     </footer>
 </body>
 </html>
